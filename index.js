@@ -42,10 +42,10 @@ function spinpfp() {
   spinInterval = setInterval(function () {
     pfp.style.transform = `rotate(${i}deg)`;
     ++i;
-    if(i > 359){
-        clearInterval(spinInterval);
-        pfp.style.transform = `rotate(0deg)`;
-        document.getElementById("pfp").addEventListener("mouseover", spinpfp);
+    if (i > 359) {
+      clearInterval(spinInterval);
+      pfp.style.transform = `rotate(0deg)`;
+      document.getElementById("pfp").addEventListener("mouseover", spinpfp);
     }
   }, 0);
 }
