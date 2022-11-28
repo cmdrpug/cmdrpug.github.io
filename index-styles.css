@@ -35,32 +35,31 @@ body {
 }
 
 .flex-item {
-  background-color: var(--button-primary);
-  height: 50px;
-  padding: 10px;
+  display: inline-block;
+  padding: 1px;
   margin: 0px;
 }
 
-.flex-item:hover {
-  background-color: var(--button-hover);
-}
-
-.flex-item:active {
+.nav-link:active {
   background-color: var(--button-active);
 }
 
-.flex-item:focus-within {
+.nav-link:focus-within {
   border-style: solid;
   border-color: var(--button-active);
 }
 
 .nav-link {
   color: var(--text-color);
-  display: table-cell;
+  display: inline-block;
   text-align: center;
-  vertical-align: middle;
   text-decoration: none;
   outline-color: transparent;
+  padding: 20px;
+}
+
+.nav-link:hover {
+  background-color: var(--button-hover);
 }
 
 .profile-picture {
