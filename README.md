@@ -12,7 +12,7 @@ This website was created by Logan Anderson for a web development course at Portl
 
 ### Executing program
 
-* You can find the product at [a link](https://cmdrpug.github.io/) by clicking the link or copying it to your browser
+* You can find the product at [cmdrpug.github.io](https://cmdrpug.github.io/) by clicking the link or copying it to your browser
 
 ## Authors
 
