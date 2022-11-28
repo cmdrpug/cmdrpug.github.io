@@ -15,7 +15,7 @@
           <a href="#about" class="nav-link">About</a>
         </div>
         <div class="flex-item">
-          <a href="#previousWork" class="nav-link">Previous Work</a>
+          <a href="#previous-work" class="nav-link">Previous Work</a>
         </div>
         <div class="flex-item">
           <a href="#projects" class="nav-link">Projects</a>
@@ -26,7 +26,7 @@
       </div>
     </nav>
     <main>
-      <div id="about">
+      <div id="about" class="section">
         <h1 class="sectionHeader">ABOUT</h1>
         <img
           src="images/tank_pfp.jpg"
@@ -35,59 +35,89 @@
           height="200"
           class="profile-picture"
         />
-        <p class="intro-paragraph">
+        <br />
+        <p id="intro-paragraph" class="text-body">
           Hi my name is Logan and welcome to my introduction page. I am a senior
-          at PSU and have enjoyed my time so far in the computer science and music
-          programs. I LOVE MY DOG TANK!
+          at PSU and have enjoyed my time so far in the computer science and
+          music programs. I LOVE MY DOG TANK! You can read more about my work
+          experience in the next section.
         </p>
       </div>
-      <div id="previousWork">
+
+      <div id="previous-work" class="section">
         <h1 class="sectionHeader">PREVIOUS WORK</h1>
+        <p class="text-body">
+          I am hoping to graduate PSU this year. I have interned as a full stack
+          dev working on developing features with new JavaScript APIs. Some
+          projects I've worked on in school are: reading and improving a
+          calculator codebase in typescript, creating a red-black tree for a
+          database in java, and writing a sudoku solver in python.
+        </p>
+        <p class="text-body">
+          I have also worked as a professional musician before coming to PSU. I
+          still play the odd gig but its more for enjoyment than money for me
+          now. I spend most of my time with music trying to write for and learn
+          other instruments. I am working on an album on and off where I play
+          everything which is something I've dreamed of doing for about a decade
+          now since I started doing music stuff.
+        </p>
+        <p class="text-body">
+          I would love to work in game development, although I'm a bit worried
+          by some of the stories I've from devs in that field. Other than that,
+          I want to expand my skillset in ways that might help with a future
+          game-dev job and expand my abilities working with a team.
+        </p>
       </div>
-      <div id="projects">
+
+      <div class="project-container section" id="projects">
         <h1 class="sectionHeader">PROJECTS</h1>
+        <div class="project-item">something</div>
+        <div class="project-item">something</div>
+        <div class="project-item">something</div>
       </div>
 
-      <div id="contact" class="container">
-        <form class="form" action="">
-          <h1 class="sectionHeader">CONTACT FORM</h1>
-          <label for="user" class="section-label">Username: </label>
-          <input type="text" id="user" class="input-box" /><br /><br />
-          <label for="email" class="section-label">Email: </label>
-          <input type="email" id="email" class="input-box" /><br /><br />
-          <label for="pass" class="section-label">Password: </label>
-          <input type="password" id="pass" class="input-box" /><br /><br />
+      <div id="contact" class="section">
+        <h1 class="sectionHeader">CONTACT FORM</h1>
+        <div class="container">
+          <form class="form" action="">
+            <label for="user" class="section-label">Username: </label>
+            <input type="text" id="user" class="input-box" /><br /><br />
+            <label for="email" class="section-label">Email: </label>
+            <input type="email" id="email" class="input-box" /><br /><br />
+            <label for="pass" class="section-label">Password: </label>
+            <input type="password" id="pass" class="input-box" /><br /><br />
 
-          <fieldset id="newsLetter">
-            <legend class="section-label">
-              Would you like to sign up for the newsletter?
-            </legend>
+            <fieldset id="newsLetter">
+              <legend class="section-label">
+                Would you like to sign up for the newsletter?
+              </legend>
+              <input
+                type="radio"
+                class="input-radio"
+                id="newsLetterYes"
+                name="newsLetter"
+              />
+              <label for="newsLetterYes">Yes, sign me up </label> <br />
+              <input
+                type="radio"
+                class="input-radio"
+                id="newsLetterNo"
+                name="newsLetter"
+              />
+              <label for="newsLetterNo">No, thank you </label>
+            </fieldset>
+            <br />
+            <label for="date" class="section-label">Date: </label>
+            <input type="date" id="date" class="input-box" /><br /><br />
             <input
-              type="radio"
-              class="input-radio"
-              id="newsLetterYes"
-              name="newsLetter"
+              type="submit"
+              value="Submit"
+              class="btn btn-primary"
+              id="submit"
             />
-            <label for="newsLetterYes">Yes, sign me up </label> <br />
-            <input
-              type="radio"
-              class="input-radio"
-              id="newsLetterNo"
-              name="newsLetter"
-            />
-            <label for="newsLetterNo">No, thank you </label>
-          </fieldset>
-          <br />
-          <label for="date" class="section-label">Date: </label>
-          <input type="date" id="date" class="input-box" /><br /><br />
-          <input
-            type="submit"
-            value="Submit"
-            class="btn btn-primary"
-            id="submit"
-          />
-          <input type="reset" value="Reset" class="btn btn-secondary" />
-        </form>
+            <input type="reset" value="Reset" class="btn btn-secondary" />
+          </form>
+        </div>
       </div>
     </main>
   </body>
