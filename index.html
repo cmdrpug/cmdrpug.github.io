@@ -36,6 +36,7 @@
           width="200"
           height="200"
           class="profile-picture"
+          id="pfp"
         />
         <br />
         <p id="intro-paragraph" class="text-body">
@@ -73,15 +74,29 @@
 
       <div class="project-container section" id="projects">
         <h1 class="sectionHeader">PROJECTS</h1>
-        <div class="project-item">something</div>
-        <div class="project-item">something</div>
-        <div class="project-item">something</div>
+        <div class="project-item">
+          <h2 class="sectionHeader">PROJECT 1</h2>
+          <p class="project-text-body">Text about project</p>
+          
+        </div>
+
+        <div class="project-item">
+          <h2 class="sectionHeader">PROJECT 2</h2>
+          <p class="project-text-body">Text about project</p>
+
+        </div>
+        
+        <div class="project-item">
+          <h2 class="sectionHeader">ARGUMENTATIVE WRITING SAMPLE</h2>
+          <p class="project-text-body">Text about project</p>
+          <iframe class="pdf" src="Sexism in Music Research Paper.pdf"></iframe>
+        </div>
       </div>
 
       <div id="contact" class="section">
         <h1 class="sectionHeader">CONTACT FORM</h1>
         <div class="container">
-          <form class="form" action="">
+          <form class="form" id="contactForm" action="" onsubmit="return false">
             <label for="user" class="section-label">Username: </label>
             <input type="text" id="user" class="input-box" /><br /><br />
             <label for="email" class="section-label">Email: </label>
