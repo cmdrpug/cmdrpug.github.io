@@ -7,7 +7,6 @@
     <title>Logan's portfolio</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="index-styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="index.js"></script>
   </head>
   <body>
@@ -30,6 +29,7 @@
     <main>
       <div id="about" class="section">
         <h1 class="sectionHeader">ABOUT</h1>
+        <img id="tank-heart" src="images\Empty_vector_heart.svg"/>
         <img
           src="images/tank_pfp.jpg"
           alt="selfie of Logan and his dog Tank"
@@ -42,7 +42,9 @@
         <p id="intro-paragraph" class="text-body">
           Hi my name is Logan and welcome to my introduction page. I am a senior
           at PSU and have enjoyed my time so far in the computer science and
-          music programs. I LOVE MY DOG TANK! You can read more about my work
+          music programs. 
+          <span id="tank-text">I LOVE MY DOG TANK!</span>
+          You can read more about my work
           experience in the next section.
         </p>
       </div>
@@ -52,9 +54,10 @@
         <p class="text-body">
           I am hoping to graduate PSU this year. I have interned as a full stack
           dev working on developing features with new JavaScript APIs. Some
-          projects I've worked on in school are: reading and improving a
-          calculator codebase in typescript, creating a red-black tree for a
-          database in java, and writing a sudoku solver in python.
+          projects I've worked on in school that aren't included on this site
+          are: reading and improving a calculator codebase in typescript,
+          creating a red-black tree for a database in java, and writing a sudoku
+          solver in python.
         </p>
         <p class="text-body">
           I have also worked as a professional musician before coming to PSU. I
@@ -74,28 +77,74 @@
 
       <div class="project-container section" id="projects">
         <h1 class="sectionHeader">PROJECTS</h1>
+        <p class="text-body">
+          In this section I have 3 projects to show off from my time at PSU. One
+          repository and two papers. While it's a bit of a shame I don't have
+          more public work I can call on for this showcase, I know that write
+          good documentation is just as important as the code itself. I hope to
+          present a well-rounded skill set in this section.
+        </p>
         <div class="project-item">
-          <h2 class="sectionHeader">PROJECT 1</h2>
-          <p class="project-text-body">Text about project</p>
-
+          <h2 class="sectionHeader">MACHINE LEARNING GROUP PROJECT</h2>
+          <p class="project-text-body">
+            This is the only project I worked on thats hosted on github as of
+            now. It was a final project for a machine learning course I took
+            last year. The project is based on Conway's game of life which
+            follows a grid layout where each space is either on or off. The
+            state of adjacent spaces changes how a space will act on the next
+            turn. Our goal was to use multiple ML techniques to try and find
+            stable seeds for the game. I worked on a neural network approach.
+          </p>
+          <a
+            href="https://github.com/cmdrpug/GameOfLife-Thresher"
+            class="nav-link"
+            id="game-of-life-link"
+            >Game of Life Repository</a
+          >
         </div>
 
         <div class="project-item">
-          <h2 class="sectionHeader">PROJECT 2</h2>
-          <p class="project-text-body">Text about project</p>
-
+          <h2 class="sectionHeader">TECHNICAL WRITING SAMPLE</h2>
+          <p class="project-text-body">
+            This is my final paper for the technical writing course at PSU. The
+            goal of the coourse was to learn about different aspects and rules
+            of technical writing which would come together as a mock-proposal
+            for new laptops. Throughout the term I researched and gathered pros
+            and cons for my laptop candidates until I put all the work together
+            into this paper.
+          </p>
+          <iframe
+            class="pdf"
+            src="projects/Assignment 10 - Logan Anderson.pdf"
+          ></iframe>
         </div>
-        
+
         <div class="project-item">
           <h2 class="sectionHeader">ARGUMENTATIVE WRITING SAMPLE</h2>
-          <p class="project-text-body">Text about project</p>
-          <iframe class="pdf" src="Sexism in Music Research Paper.pdf"></iframe>
+          <p class="project-text-body">
+            The last project I'm showcasing hear is one of the first papers I
+            wrote in college. The assignment was to propose a solution to some
+            social issue in the form of am appeal to the Supreme Court. I chose
+            to write about womens experience working as professional musicians.
+            This is because I have been in the field myself for a number of
+            years and have intrest in making it as viable of a carrier as
+            possible for everyone. I enjoyed this assignment much more than
+            expected as I could relate it to my personal intrest and as a
+            result, I think it's one of the best papers I've ever written.
+          </p>
+          <iframe
+            class="pdf"
+            src="projects/Sexism in Music Research Paper.pdf"
+          ></iframe>
         </div>
       </div>
 
       <div id="contact" class="section">
         <h1 class="sectionHeader">CONTACT FORM</h1>
-        <p id="contact-text" class="text-body">Text about contact</p>
+        <p id="contact-text" class="text-body">
+          If you want to contact me, please fill out the form below with your
+          information and I will get back to you as soon as I can!
+        </p>
         <div class="container">
           <form class="form" id="contactForm" action="" onsubmit="return false">
             <label for="user" class="section-label">Username: </label>
