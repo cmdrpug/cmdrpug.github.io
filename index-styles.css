@@ -81,7 +81,6 @@ body {
 #tank-text {
   color: rgb(219, 0, 0);
   font-weight: bold;
-  cursor: pointer;
 }
 
 #tank-heart {
@@ -89,7 +88,7 @@ body {
   width: 275px;
   margin-left: -75px;
   margin-top: 10px;
-  display: "none";
+  visibility: hidden;
   z-index: 1;
 }
 
