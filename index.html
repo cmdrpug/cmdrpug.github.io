@@ -12,32 +12,83 @@
     <nav>
       <div class="flex-container">
         <div class="flex-item">
-          <a href="" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </div>
         <div class="flex-item">
-          <a href="" class="nav-link">Previous Work</a>
+          <a href="#previousWork" class="nav-link">Previous Work</a>
         </div>
         <div class="flex-item">
-          <a href="" class="nav-link">Projects</a>
+          <a href="#projects" class="nav-link">Projects</a>
         </div>
         <div class="flex-item">
-          <a href="" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </div>
       </div>
     </nav>
     <main>
-      <img
-        src="images/tank_pfp.jpg"
-        alt="selfie of Logan and his dog Tank"
-        width="200"
-        height="200"
-        class="profile-picture"
-      />
-      <p class="intro-paragraph">
-        Hi my name is Logan and welcome to my introduction page. I am a senior
-        at PSU and have enjoyed my time so far in the computer science and music
-        programs. I LOVE MY DOG TANK!
-      </p>
+      <div id="about">
+        <h1 class="sectionHeader">ABOUT</h1>
+        <img
+          src="images/tank_pfp.jpg"
+          alt="selfie of Logan and his dog Tank"
+          width="200"
+          height="200"
+          class="profile-picture"
+        />
+        <p class="intro-paragraph">
+          Hi my name is Logan and welcome to my introduction page. I am a senior
+          at PSU and have enjoyed my time so far in the computer science and music
+          programs. I LOVE MY DOG TANK!
+        </p>
+      </div>
+      <div id="previousWork">
+        <h1 class="sectionHeader">PREVIOUS WORK</h1>
+      </div>
+      <div id="projects">
+        <h1 class="sectionHeader">PROJECTS</h1>
+      </div>
+
+      <div id="contact" class="container">
+        <form class="form" action="">
+          <h1 class="sectionHeader">CONTACT FORM</h1>
+          <label for="user" class="section-label">Username: </label>
+          <input type="text" id="user" class="input-box" /><br /><br />
+          <label for="email" class="section-label">Email: </label>
+          <input type="email" id="email" class="input-box" /><br /><br />
+          <label for="pass" class="section-label">Password: </label>
+          <input type="password" id="pass" class="input-box" /><br /><br />
+
+          <fieldset id="newsLetter">
+            <legend class="section-label">
+              Would you like to sign up for the newsletter?
+            </legend>
+            <input
+              type="radio"
+              class="input-radio"
+              id="newsLetterYes"
+              name="newsLetter"
+            />
+            <label for="newsLetterYes">Yes, sign me up </label> <br />
+            <input
+              type="radio"
+              class="input-radio"
+              id="newsLetterNo"
+              name="newsLetter"
+            />
+            <label for="newsLetterNo">No, thank you </label>
+          </fieldset>
+          <br />
+          <label for="date" class="section-label">Date: </label>
+          <input type="date" id="date" class="input-box" /><br /><br />
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary"
+            id="submit"
+          />
+          <input type="reset" value="Reset" class="btn btn-secondary" />
+        </form>
+      </div>
     </main>
   </body>
 </html>

@@ -5,11 +5,24 @@ body {
   --button-active: rgb(233, 184, 25);
   --text-color: rgb(255, 255, 255);
   background-color: rgb(154, 204, 228);
+  --container-border-color: rgb(26, 25, 25);
+  --container-background-color: rgb(160, 160, 160);
+  --primary-bg-color: green;
+  --primary-bg-color-hover: orange;
+  --primary-text-color: white;
+  --primary-text-color-hover: black;
+  --primary-border-color: green;
+  --primary-border-color-hover: black;
+  --secondary-bg-color: white;
+  --secondary-bg-color-hover: black;
+  --secondary-text-color: green;
+  --secondary-text-color-hover: red;
+  --secondary-border-color: green;
+  --secondary-border-color-hover: red;
   margin: auto;
   text-align: center;
 }
 
-/* Code for exercise 01-flex */
 .flex-container {
   background-color: var(--button-primary);
   display: flex;
@@ -51,4 +64,87 @@ body {
 
 .profile-picture {
   border-radius: 100%;
+}
+
+.sectionHeader {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  border-style: solid;
+  border-radius: 2%;
+  border-color: var(--container-border-color);
+  background-color: var(--container-background-color);
+  position: relative;
+}
+
+.form {
+  margin: auto;
+  text-align: left;
+  width: 100%;
+}
+
+.section-label {
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+fieldset {
+  border: 0;
+  position: relative;
+  left: -20px;
+}
+
+.input-box {
+  width: 180px;
+  position: absolute;
+  right: 10px;
+}
+
+.input-radio {
+  margin-left: 25px;
+}
+
+#submit {
+  margin-left: 10px;
+}
+
+.btn {
+  width: 135px;
+  height: 40px;
+}
+
+.btn-primary {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  border-color: var(--primary-border-color);
+  border-style: solid;
+}
+
+.btn-primary:hover {
+  color: var(--primary-text-color-hover);
+  background-color: var(--primary-bg-color-hover);
+  border-color: var(--primary-border-color-hover);
+  border-style: solid;
+}
+
+.btn-secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
+  border-color: var(--secondary-border-color);
+  border-style: solid;
+}
+
+.btn-secondary:hover {
+  color: var(--secondary-text-color-hover);
+  background-color: var(--secondary-bg-color-hover);
+  border-color: var(--secondary-border-color-hover);
+  border-style: solid;
 }
