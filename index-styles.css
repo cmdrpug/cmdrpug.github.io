@@ -5,7 +5,6 @@ body {
   --button-active: rgb(233, 184, 25);
   --text-color: rgb(255, 255, 255);
   --link-text-color: rgb(0, 0, 0);
-  background-color: rgb(154, 204, 228);
   --element-highlight-color: rgb(83, 177, 221);
   --container-border-color: rgb(26, 25, 25);
   --container-background-color: rgb(160, 160, 160);
@@ -21,6 +20,7 @@ body {
   --secondary-text-color-hover: red;
   --secondary-border-color: green;
   --secondary-border-color-hover: red;
+  background-color: rgb(154, 204, 228);
   margin: auto;
   text-align: center;
 }
