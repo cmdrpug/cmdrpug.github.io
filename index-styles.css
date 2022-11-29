@@ -175,6 +175,10 @@ fieldset {
   right: 10px;
 }
 
+#comment {
+  height: 80px;
+}
+
 .input-radio {
   margin-left: 25px;
 }

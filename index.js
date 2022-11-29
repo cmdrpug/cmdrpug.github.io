@@ -10,7 +10,7 @@ function init() {
 }
 
 function formToConsole() {
-  let user = document.getElementById("user").value;
+  let comment = document.getElementById("comment").value;
   let email = document.getElementById("email").value;
   let newsLetter = "no submission";
   if (document.getElementById("newsLetterYes").checked) {
@@ -18,22 +18,15 @@ function formToConsole() {
   } else if (document.getElementById("newsLetterNo").checked) {
     newsLetter = "No";
   }
-  let date = document.getElementById("date").value;
 
-  if (
-    user === "" &&
-    email === "" &&
-    newsLetter === "no submission" &&
-    date === ""
-  ) {
+  if (comment === "" && email === "" && newsLetter === "no submission") {
     console.warn("You must enter some data to submit this form");
     alert("You must enter some data to submit this form");
   } else {
     console.log("========== Form Submission ==========");
-    console.log(`   Username: ${user}`);
     console.log(`   Email: ${email}`);
     console.log(`   Newsletter: ${newsLetter}`);
-    console.log(`   Date: ${date}`);
+    console.log(`   Comment: ${comment}`);
   }
 }
 
