@@ -16,7 +16,7 @@ This website was created by Logan Anderson for a web development course at Portl
 
 ## Authors
 
-Contributors names
+Contributors names:
 
 Logan Anderson  
 
